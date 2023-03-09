@@ -22,3 +22,18 @@ Console.WriteLine();
 
 Console.Write("Введите предельную длинну элементов:");
 int length = int.Parse(Console.ReadLine());
+
+string[] NewArray= new string[ArrayStr.Length];
+Console.WriteLine("Искомые элементы :");
+
+int count = 0;
+for (int i = 0; i < ArrayStr.Length; i++)
+    {
+    if(ArrayStr[i].Length <= length)
+        {
+        NewArray[count] = ArrayStr[i];
+        Console.Write($"{NewArray[count]} ");
+        count++;
+        }
+    }
+
